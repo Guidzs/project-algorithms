@@ -1,3 +1,9 @@
 def is_palindrome_iterative(word):
-    """Faça o código aqui."""
-    raise NotImplementedError
+    if word == '':
+        return False
+
+    palindrome = ''
+    for i in range((len(word) - 1), -1, -1):
+        palindrome += word[i]
+
+    return palindrome == word
